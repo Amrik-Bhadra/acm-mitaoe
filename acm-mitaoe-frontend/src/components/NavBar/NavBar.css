@@ -1,0 +1,115 @@
+.navbar {
+    width: 100%;
+    padding: 1.5rem 0;
+    position: fixed;
+    z-index: 5;
+    background-color: transparent;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.8); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 84vw;
+    margin: 0 auto;
+    z-index: 6;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.logo span {
+    color: #2196F3;
+}
+
+.nav-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 2.5vw;
+}
+
+.nav-link {
+    color: #D1D1D1;
+    font-size: 1rem;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.active-link {
+    padding: 0 0.2rem 0.4rem 0.2rem;
+    color: #2196F3;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 2px solid #2196F3;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.menu-elements .active-link {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding: 0;
+    border: none;
+}
+
+.menu-icon {
+    display: none !important;
+    font-size: 2.1rem !important;
+    cursor: pointer;
+}
+
+.menu-content-box {
+    display: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.menu-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 0;
+}
+
+.close-icon {
+    position: absolute !important;
+    color: #fff !important;
+    font-size: 2rem !important;
+    cursor: pointer;
+    top: 1rem !important;
+    right: 1rem !important;
+}
+
+@media only screen and (max-width: 732px) {
+    .menu-icon {
+        display: block !important;
+    }
+
+    .nav-elements {
+        display: none;
+    }
+    .menu-content-box {
+        top: 0;
+        display: flex;
+        position: absolute;
+        width: 100%;
+        padding: 2rem;
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

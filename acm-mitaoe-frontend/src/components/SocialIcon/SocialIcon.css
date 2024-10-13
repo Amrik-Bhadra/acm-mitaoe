@@ -1,0 +1,50 @@
+.social-icons-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 2rem;
+  }
+  
+  .icon-div {
+    width: 11rem;
+    height: 11rem;
+    max-width: 25vw; /* Responsive sizing */
+    max-height: 25vw; /* Maintain aspect ratio */
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon-div img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+  }
+  
+  .social-container {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem 0;
+  }
+  
+  .social-container p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 0.7rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .icon-div:hover {
+    transform: scale(1.05); /* Hover effect */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
