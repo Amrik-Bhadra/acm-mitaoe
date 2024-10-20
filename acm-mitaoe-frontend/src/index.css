@@ -361,4 +361,9 @@ a {
   padding: 3rem 0;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 /* Footer section ends */

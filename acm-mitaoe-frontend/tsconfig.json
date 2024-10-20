@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "allowJs": true,       // Allows JavaScript files in the project
+      "checkJs": false,      // Disables TypeScript type checking on JS files
+      "noEmit": true         // Prevents emitting .js files when compiling
+    },
+    "include": ["src/**/*"]  // Adjust this path to your source code folder
+  }
+  
